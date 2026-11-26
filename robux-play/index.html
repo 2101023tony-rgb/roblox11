@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description" content="ROBUX PLAY - Roblox 커뮤니티와 제휴 혜택을 한곳에서 확인하세요.">
+  <title>ROBUX PLAY | Roblox Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="ROBUX PLAY 홈"><span class="brand-mark">R</span><span>ROBUX<span class="brand-accent">PLAY</span></span></a>
+    <div class="top-actions"><span id="connectionBadge" class="status-pill pending"><i></i> 연결 확인 중</span><button id="profileButton" class="avatar-button" aria-label="프로필">●</button></div>
+  </header>
+  <main id="home" class="shell">
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> ROBLOX COMMUNITY HUB</div><h1>게임을 즐기고,<br><span>새로운 혜택을 발견해.</span></h1><p>로블록스 커뮤니티 소식과 확인된 제휴 혜택을 한곳에서.</p><div class="hero-actions"><a class="btn btn-primary" href="#offers">혜택 둘러보기 <span>↗</span></a><a class="btn btn-ghost" href="#about">서비스 안내</a></div><div class="hero-foot"><span>✦ 커뮤니티 중심</span><span>✦ 제휴 여부 투명 공개</span><span>✦ 무료 이용</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="cube cube-back"></div><div class="cube cube-front"><b>R</b></div><div class="float-tag tag-top">PLAY&nbsp; / &nbsp;DISCOVER</div><div class="float-tag tag-bottom">COMMUNITY FIRST</div></div>
+    </section>
+
+    <section class="welcome-row"><div><div class="eyebrow">YOUR SPACE</div><h2 id="welcomeTitle">ROBUX PLAY에 오신 걸 환영해요</h2><p id="welcomeSub">닉네임을 설정하면 커뮤니티 기능을 이용할 수 있어요.</p></div><div class="welcome-actions"><button id="copyInviteButton" class="btn btn-ghost hidden">초대 링크 복사</button><button id="editProfileButton" class="btn btn-outline">닉네임 설정</button></div></section>
+
+    <section id="offers" class="section-block"><div class="section-heading"><div><div class="eyebrow">PARTNER BENEFITS</div><h2>제휴 혜택</h2><p>운영팀과 제휴사가 확인한 캠페인만 표시합니다.</p></div><span class="count-chip" id="offerCount">0개</span></div><div id="offerGrid" class="offer-grid"><div class="empty-state">제휴 혜택을 불러오는 중입니다…</div></div><p class="fine-print">제휴 링크를 통해 운영 수익이 발생할 수 있습니다. 각 혜택의 조건과 개인정보 처리방침을 확인한 뒤 이용하세요. 링크 클릭만으로 보상이나 수익이 보장되지는 않습니다.</p></section>
+
+    <section class="two-column">
+      <article class="panel community-panel"><div class="panel-icon">✦</div><div class="eyebrow">COMMUNITY</div><h3>함께 즐기는 로블록스</h3><p>커뮤니티 공지와 이벤트 소식을 확인하세요. 공식 Roblox 서비스와 별개인 독립 커뮤니티입니다.</p><a href="https://www.roblox.com/" target="_blank" rel="noopener noreferrer" class="text-link">Roblox 공식 사이트 <span>↗</span></a></article>
+      <article class="panel sponsor-panel"><div class="panel-icon">✳</div><div class="eyebrow">BRAND PARTNERS</div><h3>브랜드 제휴 문의</h3><p>청소년 이용자에게 적합한 캠페인, 커뮤니티 협업, 스폰서십을 제안해 주세요.</p><a id="sponsorLink" class="text-link" href="#">제휴 문의하기 <span>↗</span></a></article>
+    </section>
+
+    <section id="about" class="notice-panel"><div class="notice-icon">ⓘ</div><div><b>중요 안내</b><p>ROBUX PLAY는 Roblox Corporation과 제휴·후원 관계가 없는 독립 커뮤니티입니다. Roblox 로고·상품·Robux 지급을 공식적으로 보증하지 않습니다. 제휴사가 미성년자 이용을 명시적으로 허용하고 운영팀 검토를 통과한 캠페인만 게시합니다. 별도 승인 전에는 Robux 지급, 현금 교환, 출금 기능을 제공하지 않습니다.</p></div></section>
+
+    <section id="adminSection" class="admin-section hidden"><div class="section-heading"><div><div class="eyebrow">CONTROL CENTER</div><h2>운영자 관리</h2><p>승인된 제휴 캠페인만 게시할 수 있습니다.</p></div><span class="admin-chip">ADMIN</span></div><div class="panel admin-panel"><div class="admin-form"><label>파트너 / 브랜드<input id="partnerInput" maxlength="60" placeholder="예: 브랜드명"></label><label>캠페인 제목<input id="titleInput" maxlength="90" placeholder="캠페인 제목"></label><label>설명<textarea id="descriptionInput" maxlength="500" rows="3" placeholder="이용 조건과 혜택을 정확히 작성하세요."></textarea></label><label>제휴 링크<input id="urlInput" type="url" placeholder="https://... "></label><label>광고·제휴 고지<input id="disclosureInput" maxlength="180" placeholder="예: 링크 이용 시 운영 수수료를 받을 수 있습니다."></label><label class="check-row"><input id="minorApprovedInput" type="checkbox"> 제휴사가 미성년자 이용을 서면 허용했고 검토를 완료함</label><button id="publishButton" class="btn btn-primary">캠페인 등록</button></div><div class="admin-list-wrap"><h3>등록된 캠페인</h3><div id="adminCampaignList" class="admin-list">아직 등록된 캠페인이 없습니다.</div></div></div></section>
+    <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span>ROBUX<span class="brand-accent">PLAY</span></span></a><div class="footer-links"><a href="privacy.html">개인정보 안내</a><a href="terms.html">이용약관</a><a href="mailto:hello@example.com" id="footerContact">문의</a></div><small>© <span id="year"></span> ROBUX PLAY. Independent community project.</small></footer>
+  </main>
+  <nav class="mobile-nav"><a class="active" href="#home"><span>⌂</span>홈</a><a href="#offers"><span>✧</span>혜택</a><a href="#about"><span>ⓘ</span>안내</a></nav>
+
+  <dialog id="profileDialog" class="dialog"><form method="dialog" id="profileForm"><button class="dialog-close" value="cancel" aria-label="닫기">×</button><div class="eyebrow">YOUR PROFILE</div><h2>닉네임 설정</h2><p>실명, 전화번호, 학교, Roblox 비밀번호는 입력하지 마세요.</p><label>닉네임<input id="nicknameInput" maxlength="16" minlength="2" placeholder="2~16자 닉네임" autocomplete="nickname" required></label><button id="saveProfileButton" class="btn btn-primary full" value="default">저장하기</button></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
